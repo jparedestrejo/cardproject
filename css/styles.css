@@ -17,7 +17,6 @@
 
 .card-front {
   padding: 0.5em;
-  background-color: yellow;
 }
 
 .icon {
@@ -39,7 +38,6 @@
 }
 
 .row {
-  background-color: pink;
   display: flex;
   flex-flow: row wrap;
   align-items: center;

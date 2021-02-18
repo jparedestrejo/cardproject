@@ -4,6 +4,11 @@ $card-height: $card-width*1.4;
 $font-size-number: $card-width * 0.1;
 $icon-size: $card-width / 5;
 
+$num-columns : 8;
+$one-column : 100% / $num_columns;
+$loop-start: 1;
+$loop-end: $num-columns +1;
+
 $one-column: 12.5%;
 @mixin col($span-num) {
  flex: 0 0 $one-column * $span-num;
@@ -34,7 +39,6 @@ $one-column: 12.5%;
 //because it is a card front we want a bit of extra padding
 .card-front {
     padding: .5em;
-    background-color: yellow;
 }
 
 //set icon size
@@ -59,7 +63,6 @@ $one-column: 12.5%;
 }
 
 .row {
-background-color: pink;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
