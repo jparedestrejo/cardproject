@@ -1,8 +1,0 @@
-@mixin card-size() {
-    width: $card-width;
-    height: $card-height;
-}
-@mixin card-border (){
-    border: $backcard-border-color $backcard-border-type $backcard-border-size;
-    border-radius: $border-radius;
-}

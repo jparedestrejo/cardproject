@@ -1,8 +1,8 @@
-
+//make column classes
 @mixin col($span-num) {
  flex: 0 0 $one-column * $span-num;
 }
-
+//make offset classes
 @mixin offset($offset-num) {
  margin-left: $one-column * $offset-num;
 }
@@ -55,8 +55,8 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-align-content: space-between;
-height: 100%;
+    align-content: space-between;
+    height: 100%;
 }
 .cell {
     flex: 1;
@@ -67,11 +67,11 @@ height: 100%;
     .col-#{$index} {
         @include col($index);
     }
-    }
+}
     
-    //make offset classes
-    @for $index from 1 to 9 {
+//make offset classes
+@for $index from 1 to 9 {
     .offset-#{$index} {
         @include offset($index);
     }
-    }        
+}        
